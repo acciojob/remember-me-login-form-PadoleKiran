@@ -14,7 +14,6 @@
   }
 
   window.addEventListener("DOMContentLoaded", () => {
-    // Ensure initial expectations: empty fields & unchecked checkbox
     usernameInput.value = "";
     passwordInput.value = "";
     rememberCheckbox.checked = false;
@@ -23,11 +22,10 @@
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const username = usernameInput.value.trim();
     const password = passwordInput.value;
 
-    alert(Logged in as ${username});
+    alert(`Logged in as ${username}`);
 
     if (rememberCheckbox.checked) {
       localStorage.setItem("username", username);
@@ -43,7 +41,7 @@
   existingBtn.addEventListener("click", () => {
     const savedUsername = localStorage.getItem("username");
     if (savedUsername) {
-      alert(Logged in as ${savedUsername});
+      alert(`Logged in as ${savedUsername}`);
     }
   });
 })();
