@@ -1,18 +1,3 @@
-// //your JS code here. If required.
-// let submit_btn = document.getElementById("existing");
-// let username = document.getElementById("username");
-// let password = document.getElementById("password");
-// let checkbox = document.getElementById("checkbox");
-
-// let localStroage = [];
-// submit_btn.addEventListner("click",() => {
-// 	if(username.length > 0 && password.length > 0){
-// 		localStroage.push(username);
-// 		localStroage.push(password);
-// 	}
-// 	alert(username + " " + password);
-// });
-
 (function () {
   const form = document.getElementById("login-form");
   const usernameInput = document.getElementById("username");
